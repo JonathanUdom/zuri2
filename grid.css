@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+main {
+    display: grid;
+    gap: 10px;
+    width: 500px;
+    margin: 10% auto;
+    grid-template-areas:
+        "a a a b b"
+        "a a a b b"
+        "c c d d d"
+        "c c e e e";
+}
+
+div {
+    padding: 20px;
+}
+
+.a {
+    background-color: blueviolet;
+    color: blueviolet;
+    grid-area: a;
+}
+
+.b {
+    background-color: darkred;
+    color: darkred;
+    grid-area: b;
+}
+
+.c {
+    background-color: navy;
+    color: navy;
+    grid-area: c;
+}
+
+.d {
+    background-color: darkgreen;
+    color: darkgreen;
+    grid-area: d;
+}
+
+.e {
+    background-color: goldenrod;
+    color: goldenrod;
+    grid-area: e;
+}

@@ -1,0 +1,94 @@
+@import url('https://fonts.google.com/specimen/Lexend+Deca');
+
+* {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 15px;
+    box-sizing: border-box;
+    --brightorange: hsl(31, 77%, 52%);
+    --darkcyan: hsl(184, 100%, 22%);
+    --verydarkcyan: hsl(179, 100%, 13%);
+    --verylightgray: hsl(0, 0%, 95%);
+    --transparentwhite: hsla(0, 0%, 100%, 0.75);
+
+
+}
+
+main {
+    width: fit-content;
+    border-radius: 10px;
+    background-color: red;
+    display: flex;
+}
+
+.card {
+    margin: 0;
+    min-width: 280px;
+    max-width: 280px;
+    padding: 20px;
+    color: var(--transparentwhite);
+    text-align: left;
+}
+figure{
+    margin: 0;
+    padding: 0;
+}
+img {
+    width: 50px;
+}
+
+.text {
+    margin: 30px 0;
+}
+
+.btn {
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.sedan .btn {
+    border: 1px solid var(--verylightgray);
+    color: var(--brightorange);
+    background-color: var(--verylightgray);
+}
+
+.sedan .btn:hover {
+    border: 1px solid var(--verylightgray);
+    color: var(--verylightgray);
+    background-color: var(--brightorange);
+}
+
+.suv .btn {
+    border: 1px solid var(--verylightgray);
+    color: var(--darkcyan);
+    background-color: var(--verylightgray);
+}
+
+.suv .btn:hover {
+    border: 1px solid var(--verylightgray);
+    color: var(--verylightgray);
+    background-color: var(--darkcyan);
+}
+
+.luxury .btn {
+    border: 1px solid var(--verylightgray);
+    color: var(--verydarkcyan);
+    background-color: var(--verylightgray);
+}
+
+.luxury .btn:hover {
+    border: 1px solid var(--verylightgray);
+    color: var(--verylightgray);
+    background-color: var(--verydarkcyan);
+}
+
+.sedan {
+    background-color: var(--brightorange);
+}
+
+.suv {
+    background-color: var(--darkcyan);
+}
+
+.luxury {
+    background-color: var(--verydarkcyan);
+}
